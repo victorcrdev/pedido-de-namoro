@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <!-- viewport correto para iPhone/Safari, sem zoom acidental -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#5b2a4a" />
+  <title>Um convite especial ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Fundo com corações flutuando suavemente -->
+  <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+
+  <!-- TELA 1: o convite -->
+  <main class="screen screen--ask" id="askScreen">
+    <div class="card">
+      <p class="eyebrow">um convite, só pra você</p>
+      <h1 class="question">
+        Quer namorar comigo,<br />
+        <span class="name">Pita?</span> <span class="heart-pulse">❤️</span>
+      </h1>
+
+      <div class="buttons" id="buttonsWrap">
+        <button type="button" class="btn btn--yes" id="btnYes">
+          SIM <span aria-hidden="true">❤️</span>
+        </button>
+
+        <!-- botão NÃO: começa no fluxo normal, depois vira "fixed" e foge -->
+        <button type="button" class="btn btn--no" id="btnNo">
+          NÃO <span aria-hidden="true">😭</span>
+        </button>
+      </div>
+
+      <p class="taunt" id="tauntText" aria-live="polite">&nbsp;</p>
+    </div>
+  </main>
+
+  <!-- TELA 2: comemoração -->
+  <section class="screen screen--yes" id="yesScreen" aria-hidden="true">
+    <div class="card card--yes">
+      <p class="celebration-emoji">🥹❤️</p>
+      <h2 class="celebration-title">Ebaaaa!</h2>
+      <p class="celebration-text">Eu te amo e amo namorar você.</p>
+      <p class="celebration-sub">a partir de hoje, oficialmente ❤️</p>
+    </div>
+    <!-- partículas de comemoração (corações + confete) entram aqui via JS -->
+    <div class="celebration-particles" id="celebrationParticles" aria-hidden="true"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
