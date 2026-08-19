@@ -58,15 +58,9 @@
      -------------------------------------------------------- */
   const phrases = [
     "Tem certeza? 🥺",
-    "Pensa melhor...",
-    "Não vale apertar aqui 😭",
-    "Você não vai escapar do SIM ❤️",
+    "Você num me ama pita?",
     "Olha o outro botão 👀",
     "Essa opção não existe 😌",
-    "Quase! Mas não 😅",
-    "Tenta de novo... ou melhor, não tenta 😂",
-    "O SIM tá logo ali ❤️",
-    "Vai ser não a resposta? Duvido 👀",
   ];
   let lastPhraseIndex = -1;
   let attempts = 0;
